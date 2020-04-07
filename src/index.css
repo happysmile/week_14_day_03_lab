@@ -1,3 +1,14 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +21,19 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.news-list li {
+  padding: 1em;
+  border: 1px gray solid;
+  border-radius: 2em;
+  margin: 0 1em 1em 0;
+  list-style: none;
+  width: 350px;
 }
